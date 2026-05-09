@@ -1,0 +1,129 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 20px;
+}
+
+.modal {
+  width: 100%;
+  max-width: 900px;
+  max-height: 95vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 25px;
+  position: relative;
+  animation: modal 0.4s ease;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-top {
+  height: 156px;
+  background: linear-gradient(135deg, #38bdf8, #0f172a);
+}
+
+.modal-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 6px solid white;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal-content {
+  padding: 80px 40px 40px;
+  text-align: center;
+}
+
+.info-title {
+  color: #64748b;
+  font-size: 1.2rem;
+}
+
+.info-value {
+  font-size: 3rem;
+  margin: 20px 0 35px;
+  color: #0f172a;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.icons span {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icons span:hover {
+  transform: scale(1.2);
+}
+
+.extra-info {
+  display: grid;
+  gap: 20px;
+}
+
+.country-card,
+.weather-card {
+  background: #f8fafc;
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.flag {
+  width: 90px;
+  border-radius: 10px;
+}
+
+.map-container iframe {
+  border-radius: 20px;
+}
+
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: crimson;
+  color: white;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+}

@@ -1,51 +1,14 @@
-*{
-  background-color: darkslategrey;
-  color:lightgrey;
-  text-align: center;
+html,
+body,
+#root {
+  min-height: 100vh;
 }
-.caja_chistes{
-  text-align: center;
-  word-wrap: break-word;
-  width: 300px;
-  height: 120px;
-  border: solid 2px rgb(92, 4, 4);
-  border-radius: 5%;
-  margin: 5px;
-  padding: 10px;
-  color:rgb(204, 200, 162);
-  display: inline-flex;
-  background-color: rgb(124, 35, 35);
+
+#root {
+  display: flex;
+  flex-direction: column;
 }
-.caja_personas{
-  text-align: center;
-  display: inline-flex;
-  width: 400px;
-  height: 120px;
-  padding: 15px;
-  background-color: rgb(212, 207, 207);
-  border: solid 2px rgb(7, 38, 105);
-}
-.img{
-  border-radius: 50%;
-  background-color: inherit;
-  border-color:solid 1px rgb(7, 38, 105); ;
-}
-.caja_persona{
-  text-align: left;
-  background-color: inherit;
-  color:rgb(7, 38, 105);
-  padding-top: 3px;
-  padding-left: 20px;
-}
-.button{
-  width: 30px;
-  height: 20px;
-  margin-top: 100px;
-  background-color:darkslategrey;
-  border-radius: 10px;
-  border:none;
-}
-.button:hover{
-  background-color:rgb(6, 68, 68);
-  color:rgb(122, 240, 240);
+
+.main-content {
+  flex: 1;
 }
